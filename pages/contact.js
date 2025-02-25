@@ -17,7 +17,11 @@ const Contact = () => {
               title="gmail"
               icon="gpl.gowthamchand"
             />
-            <ContactLink href="https://github.com/gpl-gowthamchand" title="github" icon="gpl-gowthamchand" />
+            <ContactLink
+              href="https://github.com/gpl-gowthamchand"
+              title="github"
+              icon="gpl-gowthamchand"
+            />
             <ContactLink
               href="https://www.instagram.com/gowth4m_xx/"
               title="instagram"

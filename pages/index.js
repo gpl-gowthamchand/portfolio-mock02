@@ -25,7 +25,9 @@ export default function Home({ posts }) {
           <div className="pt-6">
             <h1 className="pb-6 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
               Hi, I am{' '}
-              <span className="text-primary-color-500 dark:text-primary-color-dark-500">Gowtham</span>
+              <span className="text-primary-color-500 dark:text-primary-color-dark-500">
+                Gowtham
+              </span>
             </h1>
             <h2 className="prose pt-5 text-lg text-gray-600 dark:text-gray-300">
               {`Welcome to ${siteMetadata.description}. I am an Android Developer and Web Enthusiast who is passionate about building seamless applications and exploring new technologies. In my free time, I enjoy working on side projects and expanding my skills in Android development and full-stack web development.`}
@@ -121,7 +123,7 @@ export default function Home({ posts }) {
                   </Link>
                 </div>
               </div>
-              
+
               <div className="my-2 grid items-start gap-8">
                 <div className="group relative">
                   <div className="animate-tilt absolute -inset-0.5 rounded-lg bg-gradient-to-r  from-pink-600 to-purple-600 opacity-50 blur transition duration-1000 group-hover:opacity-100 group-hover:duration-200"></div>
@@ -158,10 +160,8 @@ export default function Home({ posts }) {
             </div>
           </div>
         </div>
-        
-        
       </div>
-      
+
       {siteMetadata.newsletter.provider !== '' && (
         <div className="flex items-center justify-center pt-4">{/* <NewsletterForm /> */}</div>
       )}

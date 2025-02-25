@@ -1,4 +1,4 @@
-import { FaGraduationCap, FaBlackTie,FaRocket } from 'react-icons/fa'
+import { FaGraduationCap, FaBlackTie, FaRocket } from 'react-icons/fa'
 import { AiOutlineCode } from 'react-icons/ai'
 import { SiLeetcode } from 'react-icons/si'
 import { Disclosure, Transition } from '@headlessui/react'
@@ -7,7 +7,7 @@ import { FaBaby } from 'react-icons/fa'
 import { BsBuilding } from 'react-icons/bs'
 import { RiDoorClosedLine } from 'react-icons/ri'
 import { TbDeviceDesktopAnalytics } from 'react-icons/tb'
-import Link from 'next/link';
+import Link from 'next/link'
 
 export default function Timeline() {
   return (
@@ -38,43 +38,50 @@ export default function Timeline() {
             Graduated College
           </h3>
           <time className="text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-          2025
+            2025
           </time>
-          <p className="mt-1 text-sm font-normal text-gray-500 dark:text-gray-400">
-            7.3 CGPA
-          </p>
+          <p className="mt-1 text-sm font-normal text-gray-500 dark:text-gray-400">7.3 CGPA</p>
         </li>
-        
+
         <li className="mb-4 ml-8 rounded-md border border-gray-100 bg-white px-4 py-4 shadow-sm shadow-gray-300 dark:border-zinc-900 dark:bg-zinc-900 dark:shadow-none">
           <span className="absolute -left-3 flex h-6 w-6 items-center justify-center rounded-full bg-blue-200 ring-8 ring-white dark:bg-blue-900 dark:ring-gray-900">
-          <FaRocket />
+            <FaRocket />
           </span>
           <p className="mt-1 text-sm font-normal text-gray-500 dark:text-gray-400">
-           Here, you can check out my{' '}
-           <Link
-             href={'/about'}
-             className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100">
-             <span className="border-b-2 border-gray-500 hover:border-teal-500 text-gray-900 dark:text-white hover:text-teal-500 dark:hover:text-teal-400 hover:shadow-md">
-             Experiences</span>
-           </Link>
-           ,{' '}
-           <Link
-             href={'/projects'}
-             className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100">
-             <span className="border-b-2 border-gray-500 hover:border-teal-500 text-gray-900 dark:text-white hover:text-teal-500 dark:hover:text-teal-400 hover:shadow-md">
-             Projects</span>
-           </Link>
-           , and{' '}
-           <Link
-             href={'/activity'}
-             className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100">
-             <span className="border-b-2 border-gray-500 hover:border-teal-500 text-gray-900 dark:text-white hover:text-teal-500 dark:hover:text-teal-400 hover:shadow-md">
-             Learning milestones</span>
-           </Link>
-           !
-           </p>
+            Here, you can check out my{' '}
+            <Link
+              href={'/about'}
+              passHref
+              className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
+            >
+              <span className="border-b-2 border-gray-500 text-gray-900 hover:border-teal-500 hover:text-teal-500 hover:shadow-md dark:text-white dark:hover:text-teal-400">
+                Experiences
+              </span>
+            </Link>
+            ,{' '}
+            <Link
+              href={'/projects'}
+              passHref
+              className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
+            >
+              <span className="border-b-2 border-gray-500 text-gray-900 hover:border-teal-500 hover:text-teal-500 hover:shadow-md dark:text-white dark:hover:text-teal-400">
+                Projects
+              </span>
+            </Link>
+            , and{' '}
+            <Link
+              href={'/activity'}
+              passHref
+              className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
+            >
+              <span className="border-b-2 border-gray-500 text-gray-900 hover:border-teal-500 hover:text-teal-500 hover:shadow-md dark:text-white dark:hover:text-teal-400">
+                Learning milestones
+              </span>
+            </Link>
+            !
+          </p>
           <time className="text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-             2021 - 2025
+            2021 - 2025
           </time>
         </li>
         <li className="mb-2 ml-8 rounded-md border border-gray-100 bg-white  px-4  py-4 shadow-sm shadow-gray-300 dark:border-zinc-900 dark:bg-zinc-900 dark:shadow-none">
@@ -86,7 +93,7 @@ export default function Timeline() {
             November 17th, 2021 @KIET
           </time>
           <p className="mt-1 text-sm font-normal text-gray-500 dark:text-gray-400">
-           B.Tech in CSE (AI & DS)
+            B.Tech in CSE (AI & DS)
           </p>
         </li>
         <Disclosure>
@@ -115,13 +122,13 @@ export default function Timeline() {
                       <RiDoorClosedLine />
                     </span>
                     <h3 className="text-base font-semibold text-gray-900 dark:text-white">
-                      Finished 12<sup>th</sup> 
+                      Finished 12<sup>th</sup>
                     </h3>
                     <time className="text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                       2021 @NRI Jr college
                     </time>
                     <p className="mt-1 text-sm font-normal text-gray-500 dark:text-gray-400">
-                      With 94.4% 
+                      With 94.4%
                     </p>
                   </li>
                   <li className="mb-4 ml-8 rounded-md border border-gray-100 bg-white  px-4  py-4 shadow-sm shadow-gray-300 dark:border-zinc-900 dark:bg-zinc-900 dark:shadow-none">
@@ -129,7 +136,7 @@ export default function Timeline() {
                       <RiDoorClosedLine />
                     </span>
                     <h3 className="text-base font-semibold text-gray-900 dark:text-white">
-                      Finished 10<sup>th</sup> 
+                      Finished 10<sup>th</sup>
                     </h3>
                     <time className="text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                       March 18th, 2019 @St. Anne's high school
@@ -149,7 +156,7 @@ export default function Timeline() {
                       2017
                     </time>
                     <p className="mt-1 text-sm font-normal text-gray-500 dark:text-gray-400">
-                    Created my first webpage using HTML
+                      Created my first webpage using HTML
                     </p>
                   </li>
                   <li className="mb-4 ml-8 rounded-md border border-gray-100 bg-white  px-4  py-4 shadow-sm shadow-gray-300 dark:border-zinc-900 dark:bg-zinc-900 dark:shadow-none">

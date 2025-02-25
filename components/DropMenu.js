@@ -95,7 +95,7 @@ export default function DropMenu() {
                 </Link>
               )}
             </Menu.Item>
-            
+
             <Menu.Item>
               {({ active }) => (
                 <Link href="/projects">
@@ -197,7 +197,7 @@ export default function DropMenu() {
                 </Link>
               )}
             </Menu.Item>
-            
+
             <Menu.Item>
               {({ active }) => (
                 <Link href="https://github.com/gpl-gowthamchand/gpl-gowthamchand?tab=readme-ov-file#-github-stats">
@@ -234,7 +234,7 @@ export default function DropMenu() {
                 </Link>
               )}
             </Menu.Item>
-            
+
             <Menu.Item>
               {({ active }) => (
                 <Link href="/activity">
@@ -253,7 +253,6 @@ export default function DropMenu() {
                 </Link>
               )}
             </Menu.Item>
-            
           </div>
         </Menu.Items>
       </Transition>

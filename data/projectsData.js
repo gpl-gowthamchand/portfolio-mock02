@@ -40,57 +40,60 @@ const projectsData = [
     tech3: 'Matplotlib',
   },
   {
-    "title": "Tribute Page (Captain America - Chris Evans)",
-    "description": "Designed a tribute webpage dedicated to the iconic portrayal of Captain America by Chris Evans.",
-    "imgSrc": "",
-    "href": "https://gpl-gowthamchand.github.io/CODSOFT/",
-    "github": "https://github.com/gpl-gowthamchand/CODSOFT",
-    "tech1": "HTML",
-    "tech2": "CSS",
-    "tech3": "Bootstrap"
+    title: 'Tribute Page (Captain America - Chris Evans)',
+    description:
+      'Designed a tribute webpage dedicated to the iconic portrayal of Captain America by Chris Evans.',
+    imgSrc: '',
+    href: 'https://gpl-gowthamchand.github.io/CODSOFT/',
+    github: 'https://github.com/gpl-gowthamchand/CODSOFT',
+    tech1: 'HTML',
+    tech2: 'CSS',
+    tech3: 'Bootstrap',
   },
   {
-    "title": "Job Board (Fully Responsive Website)",
-    "description": "Developed a responsive job board platform to connect job seekers with employers.",
-    "imgSrc": "",
-    "href": "#",
-    "github": "https://github.com/gpl-gowthamchand/CODSOFT_jobboard_frontend",
-    "tech1": "HTML",
-    "tech2": "CSS",
-    "tech3": "JavaScript"
+    title: 'Job Board (Fully Responsive Website)',
+    description: 'Developed a responsive job board platform to connect job seekers with employers.',
+    imgSrc: '',
+    href: '#',
+    github: 'https://github.com/gpl-gowthamchand/CODSOFT_jobboard_frontend',
+    tech1: 'HTML',
+    tech2: 'CSS',
+    tech3: 'JavaScript',
   },
   {
-    "title": "Time Zone Converter",
-    "description": "Created a Python-based time zone converter to easily convert time across different regions.",
-    "imgSrc": "",
-    "href": "#",
-    "github": "#",
-    "tech1": "Python",
-    "tech2": "Datetime",
-    "tech3": "Tkinter"
+    title: 'Time Zone Converter',
+    description:
+      'Created a Python-based time zone converter to easily convert time across different regions.',
+    imgSrc: '',
+    href: '#',
+    github: '#',
+    tech1: 'Python',
+    tech2: 'Datetime',
+    tech3: 'Tkinter',
   },
-  
+
   {
-    "title": "Password Generator",
-    "description": "Built a secure password generator using Python to create strong and random passwords.",
-    "imgSrc": "",
-    "href": "#",
-    "github": "#",
-    "tech1": "Python",
-    "tech2": "Random",
-    "tech3": "Tkinter"
+    title: 'Password Generator',
+    description:
+      'Built a secure password generator using Python to create strong and random passwords.',
+    imgSrc: '',
+    href: '#',
+    github: '#',
+    tech1: 'Python',
+    tech2: 'Random',
+    tech3: 'Tkinter',
   },
   {
-    "title": "Vision Verse",
-    "description": "A computer vision project featuring face detection, face mesh, and hand recognition for real-time applications.",
-    "imgSrc": "",
-    "href": "#",
-    "github": "#",
-    "tech1": "OpenCV",
-    "tech2": "MediaPipe",
-    "tech3": "Python"
-  }
-  
+    title: 'Vision Verse',
+    description:
+      'A computer vision project featuring face detection, face mesh, and hand recognition for real-time applications.',
+    imgSrc: '',
+    href: '#',
+    github: '#',
+    tech1: 'OpenCV',
+    tech2: 'MediaPipe',
+    tech3: 'Python',
+  },
 ]
 
 export default projectsData

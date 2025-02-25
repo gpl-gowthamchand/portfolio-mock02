@@ -72,14 +72,15 @@ export default function AuthorLayout({ children, frontMatter }) {
               </RoughNotation>
             </p>
             <br />
-            
+
             <br />
             <p className="sm:block md:hidden lg:hidden">
               I am always looking to learn new things. I am currently working on a few projects
               related to
               <span className="font-semibold">
                 {' '}
-                Android development. I am also experimenting with full-stack development to create interactive applications.{' '}
+                Android development. I am also experimenting with full-stack development to create
+                interactive applications.{' '}
               </span>
               At the same time I am{' '}
               <RoughNotation
@@ -90,7 +91,8 @@ export default function AuthorLayout({ children, frontMatter }) {
                 animationDuration={3000}
                 multiline={true}
               >
-                actively looking for remote internships in Android Development, AI/ML, and NLP to gain hands-on experience and contribute to real-world projects.
+                actively looking for remote internships in Android Development, AI/ML, and NLP to
+                gain hands-on experience and contribute to real-world projects.
               </RoughNotation>
             </p>
             <p className="hidden md:block">
@@ -104,12 +106,10 @@ export default function AuthorLayout({ children, frontMatter }) {
                 strokeWidth="3"
                 show={true}
               >
-                <span className="text-black dark:text-white">
-                Android development.{' '}
-                </span>
+                <span className="text-black dark:text-white">Android development. </span>
               </RoughNotation>
-              I am also experimenting with full-stack development to create interactive applications.
-              At the same time I am{' '}
+              I am also experimenting with full-stack development to create interactive
+              applications. At the same time I am{' '}
               <RoughNotation
                 type="underline"
                 show={true}
@@ -118,12 +118,15 @@ export default function AuthorLayout({ children, frontMatter }) {
                 animationDuration={3000}
                 multiline={true}
               >
-                I am actively looking for remote internships in Android Development, AI/ML and NLP to gain hands-on experience and contribute to real-world projects.
+                I am actively looking for remote internships in Android Development, AI/ML and NLP
+                to gain hands-on experience and contribute to real-world projects.
               </RoughNotation>
             </p>
             <br />
             <p>
-            I strongly believe in open-source contributions and love collaborating on innovative projects. If you’re interested in discussing AI, NLP, Android development, or open-source projects, feel free to reach out via{' '}
+              I strongly believe in open-source contributions and love collaborating on innovative
+              projects. If you’re interested in discussing AI, NLP, Android development, or
+              open-source projects, feel free to reach out via{' '}
               <Link
                 href={'mailto:gpl.gowthamchand@gmail.com'}
                 className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
@@ -165,7 +168,7 @@ export default function AuthorLayout({ children, frontMatter }) {
               </Link>
             </p>
             <br />
-            
+
             <br />
             <h1>About this site</h1>
             <p>
