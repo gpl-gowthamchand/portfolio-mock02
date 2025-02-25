@@ -33,7 +33,7 @@
 2. Change directories
 
    ```sh
-   cd blog
+   cd Portfolio
    ```
 
 3. Install and use the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)
@@ -115,7 +115,7 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 - `data/logo.svg` - replace with your own logo.
 
-- `data/blog` - replace with your own blog posts.
+- `data/___` - replace with your own Projects, data & posts.
 
 - `public/static` - store assets such as images and favicons.
 

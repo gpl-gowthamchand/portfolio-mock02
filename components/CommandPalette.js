@@ -31,6 +31,7 @@ export default function CommandPalette({ navigation }) {
   const filterednavigation = query
     ? navigation.pages.filter((page) => page.name.toLowerCase().includes(query.toLocaleLowerCase()))
     : navigation.pages
+
   return (
     <>
       <motion.button
