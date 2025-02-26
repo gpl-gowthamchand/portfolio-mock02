@@ -1,21 +1,9 @@
 import Link from '@/components/Link'
 import { PageSEO } from '@/components/SEO'
-//import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
-//import { getAllFilesFrontMatter } from '@/lib/mdx'
-//import formatDate from '@/lib/utils/formatDate'
 import { RoughNotation } from 'react-rough-notation'
-// Remove the import statement for NewsletterForm
-// import NewsletterForm from '@/components/NewsletterForm'
-//import ViewCounter from '@/components/ViewCounter'
 
 const MAX_DISPLAY = 3
-
-/*export async function getStaticProps() {
-  const posts = await getAllFilesFrontMatter('blog')
-
-  return { props: { posts } }
-}*/
 
 export default function Home({ posts }) {
   return (
@@ -134,8 +122,6 @@ export default function Home({ posts }) {
           </div>
         </div>
       </div>
-
-      {/* Remove the newsletter section */}
     </>
   )
 }

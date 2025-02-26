@@ -3,10 +3,8 @@ import PageTitle from '@/components/PageTitle'
 import SectionContainer from '@/components/SectionContainer'
 import { BlogSEO } from '@/components/SEO'
 import Image from '@/components/Image'
-import ViewCounter from '@/components/ViewCounter'
-import Tag from '@/components/Tag'
+
 import siteMetadata from '@/data/siteMetadata'
-import ScrollTopAndComment from '@/components/ScrollTopAndComment'
 import {
   FacebookShareButton,
   TwitterShareButton,
@@ -33,7 +31,6 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
         authorDetails={authorDetails}
         {...frontMatter}
       />
-      <ScrollTopAndComment />
       <article>
         <div className="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
           <header className="pt-6 xl:pb-5">
@@ -60,11 +57,6 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                 <span className="flex items-center gap-1.5">
                   <HiOutlineClock className="h-5 w-5" />
                   {readingTime.text}
-                </span>
-                <span className="flex items-center gap-1.5">
-                  <HiOutlineEye className="h-5 w-5" />
-                  <ViewCounter className="ml-0" slug={slug} blogPage={true} />
-                  <div className="-ml-0.5">Views</div>
                 </span>
               </div>
             </div>
@@ -221,18 +213,6 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
             </div>
             <footer>
               <div className="divide-gray-200 text-sm font-medium leading-5 dark:divide-gray-700 xl:col-start-1 xl:row-start-2 xl:divide-y">
-                {tags && (
-                  <div className="py-4 xl:py-8">
-                    <h2 className="pb-1 text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
-                      Tags
-                    </h2>
-                    <div className="flex flex-wrap">
-                      {tags.map((tag) => (
-                        <Tag key={tag} text={tag} />
-                      ))}
-                    </div>
-                  </div>
-                )}
                 {(next || prev) && (
                   <div className="flex justify-between py-4 xl:block xl:space-y-8 xl:py-8">
                     {prev && (

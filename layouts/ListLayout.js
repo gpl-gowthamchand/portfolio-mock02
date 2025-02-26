@@ -1,11 +1,8 @@
 import Link from '@/components/Link'
-import Tag from '@/components/Tag'
 import { useState } from 'react'
-import Pagination from '@/components/Pagination'
 import formatDate from '@/lib/utils/formatDate'
-import ViewCounter from '@/components/ViewCounter'
 
-export default function ListLayout({ posts, title, initialDisplayPosts = [], pagination }) {
+export default function ListLayout({ posts, title, initialDisplayPosts = [] }) {
   const [searchValue, setSearchValue] = useState('')
   const filteredBlogPosts = posts.filter((frontMatter) => {
     const searchContent = frontMatter.title + frontMatter.summary + frontMatter.tags.join(' ')
@@ -62,9 +59,6 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
                     <dl>
                       <dd className="text-sm font-normal leading-6 text-gray-500 dark:text-gray-400">
                         <time dateTime={date}>{formatDate(date)}</time>
-                        {' • '}
-                        <ViewCounter className="mx-1" slug={slug} />
-                        views
                       </dd>
                     </dl>
                     <div className="space-y-5 xl:col-span-4">
@@ -79,11 +73,6 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
                             </Link>
                           </h2>
                         </div>
-                        <div className="flex flex-wrap">
-                          {tags.map((tag) => (
-                            <Tag key={tag} text={tag} />
-                          ))}
-                        </div>
                         <div className="prose max-w-none pt-5 text-gray-500 dark:text-gray-400">
                           {summary}
                         </div>
@@ -96,9 +85,6 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
           })}
         </ul>
       </div>
-      {pagination && pagination.totalPages > 1 && !searchValue && (
-        <Pagination currentPage={pagination.currentPage} totalPages={pagination.totalPages} />
-      )}
     </>
   )
 }
