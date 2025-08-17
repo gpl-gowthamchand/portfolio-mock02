@@ -1,5 +1,4 @@
-import { Dialog, Combobox, Transition } from '@headlessui/react'
-import { useState, useEffect, Fragment } from 'react'
+import { useState, useEffect } from 'react'
 import { HiSearch } from 'react-icons/hi'
 import { useRouter } from 'next/router'
 import { FiCommand } from 'react-icons/fi'
@@ -14,28 +13,32 @@ export default function CommandPalette({ navigation }) {
   useEffect(() => {
     const handleKeyDown = (event) => {
       if (event.key === 'k' && (event.metaKey || event.ctrlKey)) {
-        setIsOpen(!isOpen)
+        event.preventDefault()
+        setIsOpen(true)
+      }
+      if (event.key === 'Escape') {
+        setIsOpen(false)
       }
     }
     window.addEventListener('keydown', handleKeyDown)
 
     return () => window.removeEventListener('keydown', handleKeyDown)
-  }, [isOpen])
+  }, [])
 
   const toggleIcon = () => {
     setIsOpen(!isOpen)
   }
 
-  const [ThemeSound] = useSound('/static/sounds/open.mp3')
+  const [ThemeSound] = useSound('/static/sounds/open.mp3', { volume: 0.5 })
 
   const filterednavigation = query
-    ? navigation.pages.filter((page) => page.name.toLowerCase().includes(query.toLocaleLowerCase()))
+    ? navigation.pages.filter((page) => page.name.toLowerCase().includes(query.toLowerCase()))
     : navigation.pages
 
   return (
     <>
       <motion.button
-        className="ml-2 mr-1 flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-zinc-300 p-1 ring-zinc-400 transition-all duration-200 ease-in-out hover:bg-zinc-300 hover:ring-1 dark:bg-zinc-700 dark:ring-white dark:hover:bg-zinc-800"
+        className="ml-2 mr-1 flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-gray-200 p-1 ring-gray-400 transition-all duration-200 ease-in-out hover:bg-gray-300 hover:ring-1 dark:bg-gray-700 dark:ring-gray-300 dark:hover:bg-gray-600"
         type="button"
         aria-label="Command palette"
         animate={{
@@ -47,89 +50,98 @@ export default function CommandPalette({ navigation }) {
           ThemeSound()
         }}
       >
-        <FiCommand />
+        <FiCommand className="text-gray-700 dark:text-gray-300" />
       </motion.button>
-      <Transition.Root show={isOpen} as={Fragment} afterLeave={() => setQuery('')}>
-        <Dialog onClose={setIsOpen} className="fixed inset-0 z-20 overflow-y-auto p-12 pt-[20vh]">
-          <Transition.Child
-            enter="duration-300 ease-out"
-            enterFrom="opacity-0"
-            enterTo="opacity-100"
-            leave="duration-200 ease-in"
-            leaveFrom="opacity-100"
-            leaveTo="opacity-0"
-          >
-            <Dialog.Overlay className="fixed inset-0 bg-zinc-500/75 " />
-          </Transition.Child>
-          <Transition.Child
-            enter="duration-300 ease-out"
-            enterFrom="opacity-0 scale-95"
-            enterTo="opacity-100 scale-100"
-            leave="duration-200 ease-in"
-            leaveFrom="opacity-100 scale-100"
-            leaveTo="opacity-0 scale-95"
-          >
-            <Combobox
-              value=""
-              onChange={(page) => {
-                setIsOpen(false)
-                router.push(`${page.href}`)
-              }}
-              as="div"
-              className="relative mx-auto max-h-[50vh] max-w-xl divide-y divide-gray-300 overflow-hidden overflow-y-scroll rounded-xl bg-zinc-200 shadow-2xl ring-1 ring-black/5 dark:divide-zinc-700 dark:bg-zinc-800"
-            >
-              <div className="flex items-center px-4">
-                <HiSearch className="h-6 w-6" />
-                <Combobox.Input
-                  onChange={(event) => {
-                    setQuery(event.target.value)
-                  }}
-                  className="h-12 border-0 bg-transparent  text-sm text-gray-800 placeholder-gray-400 focus:ring-0 dark:text-neutral-400"
-                  placeholder="Search..."
-                  autoComplete="off"
+
+      {/* Command Palette Modal */}
+      {isOpen && (
+        <div className="fixed inset-0 z-50 overflow-y-auto">
+          {/* Backdrop */}
+          <div
+            className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm"
+            onClick={() => setIsOpen(false)}
+          />
+
+          {/* Modal Content */}
+          <div className="relative mx-auto mt-20 max-w-xl p-6">
+            <div className="overflow-hidden rounded-xl border border-gray-200 bg-white shadow-2xl ring-1 ring-gray-200 dark:border-gray-700 dark:bg-gray-800 dark:ring-gray-700">
+              {/* Search Header */}
+              <div className="flex items-center border-b border-gray-200 bg-gray-50 px-4 py-4 dark:border-gray-700 dark:bg-gray-900">
+                <HiSearch className="h-5 w-5 text-gray-500 dark:text-gray-400" />
+                <input
+                  type="text"
+                  value={query}
+                  onChange={(e) => setQuery(e.target.value)}
+                  className="ml-3 flex-1 border-0 bg-transparent text-sm text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-0 dark:text-gray-100 dark:placeholder-gray-400"
+                  placeholder="Search pages..."
+                  autoFocus
                 />
+                <div className="rounded bg-gray-200 px-2 py-1 text-xs text-gray-400 dark:bg-gray-700 dark:text-gray-500">
+                  ⌘K
+                </div>
               </div>
-              {filterednavigation.length > 0 && (
-                <Combobox.Options static className="max-h-30 overflow-y-auto py-4 text-sm">
-                  {filterednavigation.map((page) => (
-                    <Combobox.Option key={page.name} value={page}>
-                      {({ active }) => (
-                        <div
-                          className={`cursor-pointer space-x-1 px-14  py-2  ${
-                            active ? 'bg-zinc-300 dark:bg-zinc-600' : 'bg-zinc-200 dark:bg-zinc-800'
-                          }`}
-                        >
-                          <span
-                            className={`font-medium  ${
-                              active
-                                ? 'text-neutral-900 dark:text-neutral-200'
-                                : 'text-neutral-900 dark:text-neutral-200'
-                            }`}
-                          >
+
+              {/* Results */}
+              <div className="max-h-96 overflow-y-auto">
+                {filterednavigation.length > 0 ? (
+                  filterednavigation.map((page, index) => (
+                    <button
+                      key={page.name}
+                      onClick={() => {
+                        setIsOpen(false)
+                        router.push(page.href)
+                      }}
+                      className="w-full border-b border-gray-100 px-4 py-3 text-left transition-colors duration-150 last:border-b-0 hover:bg-gray-100 dark:border-gray-800 dark:hover:bg-gray-700"
+                    >
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center space-x-3">
+                          <div className="h-2 w-2 rounded-full bg-primary-color-500 dark:bg-primary-color-400"></div>
+                          <div className="font-medium text-gray-900 dark:text-gray-100">
                             {page.name}
-                          </span>
-                          <span
-                            className={`  ${
-                              active
-                                ? 'text-neutral-700 dark:text-neutral-600'
-                                : 'text-neutral-500 dark:text-neutral-800'
-                            }`}
-                          >
-                            {page.repo}
-                          </span>
+                          </div>
+                        </div>
+                        <div className="rounded bg-gray-100 px-2 py-1 text-xs text-gray-500 dark:bg-gray-700 dark:text-gray-400">
+                          {index + 1}
+                        </div>
+                      </div>
+                      {page.repo && (
+                        <div className="mt-1 ml-5 text-sm text-gray-500 dark:text-gray-400">
+                          {page.repo}
                         </div>
                       )}
-                    </Combobox.Option>
-                  ))}
-                </Combobox.Options>
-              )}
-              {query && filterednavigation.length === 0 && (
-                <p className="py-4 px-12 text-sm text-gray-500 ">no results found</p>
-              )}
-            </Combobox>
-          </Transition.Child>
-        </Dialog>
-      </Transition.Root>
+                    </button>
+                  ))
+                ) : (
+                  <div className="px-4 py-8 text-center">
+                    <div className="mb-2 text-gray-500 dark:text-gray-400">
+                      {query ? 'No results found' : 'Start typing to search...'}
+                    </div>
+                    <div className="text-xs text-gray-400 dark:text-gray-500">
+                      Try searching for: Home, Projects, About, Contact
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              {/* Footer */}
+              <div className="border-t border-gray-200 bg-gray-50 px-4 py-3 text-xs text-gray-400 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-500">
+                <div className="flex items-center justify-between">
+                  <span>
+                    Press{' '}
+                    <kbd className="rounded bg-gray-200 px-1.5 py-0.5 font-mono text-xs dark:bg-gray-700">
+                      Esc
+                    </kbd>{' '}
+                    to close
+                  </span>
+                  <span className="font-medium text-primary-color-500 dark:text-primary-color-400">
+                    {filterednavigation.length} page{filterednavigation.length !== 1 ? 's' : ''}
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   )
 }

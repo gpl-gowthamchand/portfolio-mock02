@@ -6,9 +6,9 @@ const siteMetadata = {
   snippets: 'Reuseable code snippets collected by Gowtham',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'http://localhost:3000/',
+  siteUrl: 'https://gpl-gowthamchand.github.io/portfolio-mock02/',
   siteRepo: '#',
-  siteLogo: '/static/images/logo.svg',
+  siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/insta-card.png',
   email: 'gpl.gowthamchand@gmail.com',

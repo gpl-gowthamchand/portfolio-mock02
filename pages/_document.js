@@ -80,14 +80,12 @@ class MyDocument extends Document {
             sizes="196x196"
             href="/static/favicons/android-chrome-196x196.png"
           />
-          <link
-            rel="icon"
-            href="/static/favicons/favicon.ico"
-            sizes="any"
-            type="image/x-icon"
-          />
+          <link rel="icon" href="/static/favicons/favicon.ico" sizes="any" type="image/x-icon" />
           <meta name="msapplication-TileImage" content="/static/favicons/windows-tile.png" />
-          <meta name="msapplication-square70x70logo" content="/static/favicons/windows-small-tile.png" />
+          <meta
+            name="msapplication-square70x70logo"
+            content="/static/favicons/windows-small-tile.png"
+          />
           <meta
             name="msapplication-square150x150logo"
             content="/static/favicons/windows-medium-tile.png"
@@ -121,7 +119,12 @@ class MyDocument extends Document {
             integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc"
             crossOrigin="anonymous"
           />
-          <link rel="icon" href="/static/favicons/new-favicon.svg" sizes="any" type="image/svg+xml" />
+          <link
+            rel="icon"
+            href="/static/favicons/new-favicon.svg"
+            sizes="any"
+            type="image/svg+xml"
+          />
           <meta
             name="google-site-verification"
             content="_Ba0lKk4Dl9XMvABJ9gZEtoMPITT5Vr5TGx2M-34Z_I"

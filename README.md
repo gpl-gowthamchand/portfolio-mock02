@@ -7,15 +7,14 @@
 </h1>
 
 <p align="center">
-  This is my personal portfolio hosted <a href="http://localhost:3000/" target="_blank">here</a> built with <a href="https://nextjs.org/" target="_blank">Next.js</a>, <a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a> and hosted with <a href="https://www.vercel.com/" target="_blank">Vercel</a>.
+  This is my personal portfolio hosted <a href="https://gpl-gowthamchand.github.io/portfolio-mock02/" target="_blank">here</a> built with <a href="https://nextjs.org/" target="_blank">Next.js</a>, <a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a> and hosted with <a href="https://www.vercel.com/" target="_blank">Vercel</a>.
 </p>
 
 <p align="center">
   The original template is designed by <a href="https://github.com/timlrx" target="_blank">Timothy Lin</a> and can be found <a href="https://github.com/timlrx/tailwind-nextjs-starter-blog" target="_blank">here</a>. The demo for the same can be found <a href="https://tailwind-nextjs-starter-blog.vercel.app/" target="_blank">here</a>.
 </p>
 
-![demo](![alt text](image.png))
-
+<!-- Demo image removed - add your portfolio screenshot here -->
 
 ## 🛠 Installation & Set Up
 
@@ -39,7 +38,7 @@
 
 4. Set up the environment variables:
 
-  -  Create a .env.local file and add the necessary environment variables as per .env.example.
+- Create a .env.local file and add the necessary environment variables as per .env.example.
 
 5. Start the development server
 
@@ -61,7 +60,7 @@
    npm run serve
    ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [https://gpl-gowthamchand.github.io/portfolio-mock02/](https://gpl-gowthamchand.github.io/portfolio-mock02/) with your browser to see the result.
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
@@ -69,16 +68,16 @@ You can start editing the page by modifying `pages/index.js`. The page auto-upda
 
 You can modify the following files to personalize the portfolio:
 
--  data/siteMetadata.js - Website details
--  data/authors/default.md - About the author
--  data/projectsData.js - Portfolio projects
--  data/headerNavLinks.js - Navigation menu
--  public/static - Images and assets
--  tailwind.config.js - Tailwind styles
--  components/social-icons - Social media icons
-
+- data/siteMetadata.js - Website details
+- data/authors/default.md - About the author
+- data/projectsData.js - Portfolio projects
+- data/headerNavLinks.js - Navigation menu
+- public/static - Images and assets
+- tailwind.config.js - Tailwind styles
+- components/social-icons - Social media icons
 
 ## 🤝 Contributing
 
 Contributions are welcome! If you have any ideas for improvement, feel free to fork the repository, submit a pull request, or open an issue with the "enhancement" tag.
+
 </div>
