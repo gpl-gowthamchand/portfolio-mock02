@@ -27,7 +27,7 @@ Welcome to this **mock portfolio template** - a showcase of modern web developme
 ## 🖼️ **Portfolio Preview**
 
 <div align="center">
-  <img alt="Portfolio Screenshot" src="portfolio-preview.png" width="800" />
+  <img alt="Portfolio Screenshot" src="public/static/images/preview.png" width="800" />
   
   *📸 **Your portfolio in action** - Clean, professional design with dark theme and modern UI*
 </div>
