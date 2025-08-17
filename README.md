@@ -4,21 +4,9 @@
   # 🚀 **GPL Gowthamchand Portfolio**
   
   ### *Full-Stack Developer & Creative Problem Solver*
-  
-  [![Next.js](https://img.shields.io/badge/Next.js-15.4.6-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
-  [![React](https://img.shields.io/badge/React-18.3.1-blue?style=for-the-badge&logo=react)](https://reactjs.org/)
-  [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.0-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
-  [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-  
-  [![Live Demo](https://img.shields.io/badge/Live_Demo-View_Portfolio-green?style=for-the-badge)](https://gpl-gowthamchand.github.io/portfolio-mock02/)
-  [![GitHub](https://img.shields.io/badge/GitHub-View_Source-black?style=for-the-badge&logo=github)](https://github.com/gpl-gowthamchand/portfolio-mock02)
 </div>
 
 ---
-
-## 🌟 **About This Portfolio**
-
-Welcome to my **professional portfolio** - a showcase of my skills, projects, and passion for creating exceptional digital experiences. This isn't just another portfolio; it's a **living testament** to my journey as a developer, featuring cutting-edge technologies and modern design principles.
 
 ### ✨ **What Makes It Special**
 
@@ -30,13 +18,9 @@ Welcome to my **professional portfolio** - a showcase of my skills, projects, an
 
 ---
 
-## 🖼️ **Portfolio Preview**
+## 🌟 **Portfolio Overview**
 
-<div align="center">
-  <img alt="Portfolio Screenshot" src="image.png" width="800" />
-  
-  *📸 **Your portfolio screenshot** - This shows how your portfolio looks*
-</div>
+Welcome to my **professional portfolio** - a showcase of my skills, projects, and passion for creating exceptional digital experiences. This isn't just another portfolio; it's a **living testament** to my journey as a developer, featuring cutting-edge technologies and modern design principles.
 
 ---
 
@@ -214,8 +198,6 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 <div align="center">
   
   ### 🌟 **Ready to build something amazing?**
-  
-  [![Get Started](https://img.shields.io/badge/Get_Started-Start_Building-blue?style=for-the-badge&logo=rocket)](https://github.com/gpl-gowthamchand/portfolio-mock02)
   
   ---
   
