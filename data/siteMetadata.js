@@ -8,9 +8,9 @@ const siteMetadata = {
   theme: 'system', // system, dark or light
   siteUrl: 'https://gpl-gowthamchand.github.io/portfolio-mock02/',
   siteRepo: '#',
-  siteLogo: '/static/images/logo.png',
+  siteLogo: '/static/images/icons8-g.svg',
   image: '/static/images/avatar.png',
-  socialBanner: '/static/images/logo.png',
+  socialBanner: '/static/images/icons8-g.svg',
   email: 'gpl.gowthamchand@gmail.com',
   github: 'https://github.com/gpl-gowthamchand/',
   linkedin: 'https://www.linkedin.com/in/gplgowthamchand/',

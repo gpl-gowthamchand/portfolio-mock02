@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Portfolio Logo" src="https://github.com/gpl-gowthamchand/portfolio-mock02/blob/main/public/static/images/logo.png" width="120" />
+  <img alt="Portfolio Logo" src="https://github.com/gpl-gowthamchand/portfolio-mock02/blob/main/public/static/images/icons8-g.svg" width="120" />
   
   # 🚀 **Mock Portfolio Template**
   
