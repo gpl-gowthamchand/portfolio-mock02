@@ -12,6 +12,7 @@
 
 - **🚀 Next.js 15.4.6** - Latest features and performance optimizations
 - **🎨 Modern UI/UX** - Beautiful, responsive design with Tailwind CSS
+- **🌙 Dark Theme** - Professional dark theme with purple accents
 - **⚡ Lightning Fast** - Optimized for speed and user experience
 - **📱 Mobile First** - Perfect on every device and screen size
 - **🔒 Production Ready** - Security audited and deployment ready
@@ -22,6 +23,14 @@
 ## 🌟 **Portfolio Overview**
 
 Welcome to this **mock portfolio template** - a showcase of modern web development skills and a **professional template** that you can use for your own portfolio. This isn't just another portfolio; it's a **living example** of what a modern developer portfolio should look like, featuring cutting-edge technologies and professional design principles.
+
+## 🖼️ **Portfolio Preview**
+
+<div align="center">
+  <img alt="Portfolio Screenshot" src="portfolio-preview.png" width="800" />
+  
+  *📸 **Your portfolio in action** - Clean, professional design with dark theme and modern UI*
+</div>
 
 ---
 
