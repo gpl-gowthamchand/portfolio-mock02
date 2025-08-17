@@ -10,7 +10,7 @@ const siteMetadata = {
   siteRepo: '#',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
-  socialBanner: '/static/images/insta-card.png',
+  socialBanner: '/static/images/logo.png',
   email: 'gpl.gowthamchand@gmail.com',
   github: 'https://github.com/gpl-gowthamchand/',
   linkedin: 'https://www.linkedin.com/in/gplgowthamchand/',
