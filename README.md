@@ -1,26 +1,27 @@
 <div align="center">
   <img alt="Portfolio Logo" src="https://github.com/gpl-gowthamchand/portfolio-mock02/blob/main/public/static/images/logo.png" width="120" />
   
-  # 🚀 **GPL Gowthamchand Portfolio**
+  # 🚀 **Mock Portfolio Template**
   
-  ### *Full-Stack Developer & Creative Problem Solver*
+  ### *A Professional Portfolio Template You Can Use*
 </div>
 
 ---
 
-### ✨ **What Makes It Special**
+### ✨ **What Makes This Template Special**
 
 - **🚀 Next.js 15.4.6** - Latest features and performance optimizations
 - **🎨 Modern UI/UX** - Beautiful, responsive design with Tailwind CSS
 - **⚡ Lightning Fast** - Optimized for speed and user experience
 - **📱 Mobile First** - Perfect on every device and screen size
 - **🔒 Production Ready** - Security audited and deployment ready
+- **📋 Ready to Use** - Clone, customize, and deploy your own portfolio
 
 ---
 
 ## 🌟 **Portfolio Overview**
 
-Welcome to my **professional portfolio** - a showcase of my skills, projects, and passion for creating exceptional digital experiences. This isn't just another portfolio; it's a **living testament** to my journey as a developer, featuring cutting-edge technologies and modern design principles.
+Welcome to this **mock portfolio template** - a showcase of modern web development skills and a **professional template** that you can use for your own portfolio. This isn't just another portfolio; it's a **living example** of what a modern developer portfolio should look like, featuring cutting-edge technologies and professional design principles.
 
 ---
 
@@ -126,13 +127,13 @@ portfolio-mock02/
 
 ## 🎨 **Customization Guide**
 
-### **Personalize Your Portfolio**
+### **Personalize This Template**
 
-1. **Site Metadata** - Update `data/siteMetadata.js`
-2. **Content** - Modify `data/projectsData.js` and `data/authors/`
-3. **Styling** - Customize `tailwind.config.js`
-4. **Images** - Replace images in `public/static/images/`
-5. **Components** - Modify components in `components/` directory
+1. **Site Metadata** - Update `data/siteMetadata.js` with your information
+2. **Content** - Modify `data/projectsData.js` and `data/authors/` with your projects
+3. **Styling** - Customize `tailwind.config.js` to match your brand
+4. **Images** - Replace images in `public/static/images/` with your own
+5. **Components** - Modify components in `components/` directory as needed
 
 ### **Theme Customization**
 
@@ -204,5 +205,11 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
   **Made with ❤️ by [GPL Gowthamchand](https://github.com/gpl-gowthamchand)**
   
   *If this portfolio helped you, consider giving it a ⭐ star!*
+  
+  ---
+  
+  ## 🙏 **Credits & Inspiration**
+  
+  This portfolio template was inspired by the amazing work of [@pycoder2000](https://github.com/pycoder2000) - a Data Science enthusiast and passionate developer. Check out their profile for more inspiration and amazing projects!
   
 </div>
