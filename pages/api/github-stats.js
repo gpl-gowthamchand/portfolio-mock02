@@ -1,7 +1,3 @@
-export const config = {
-  runtime: 'edge',
-}
-
 export default async function handler(req, res) {
   try {
     const userResponse = await fetch('https://api.github.com/users/gpl-gowthamchand')

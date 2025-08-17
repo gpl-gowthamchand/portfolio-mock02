@@ -17,7 +17,8 @@
     "prepare": "husky install",
     "deploy": "node deploy.js",
     "netlify:install": "npm install --legacy-peer-deps",
-    "netlify:build": "npm run netlify:install && npm run build"
+    "netlify:build": "npm run netlify:install && npm run build",
+    "netlify:export": "npm run build && next export"
   },
   "license": "MIT",
   "repository": {
