@@ -15,7 +15,9 @@
     "analyze": "cross-env ANALYZE=true next build",
     "lint": "next lint --fix --dir pages --dir components --dir lib --dir layouts --dir scripts",
     "prepare": "husky install",
-    "deploy": "node deploy.js"
+    "deploy": "node deploy.js",
+    "netlify:install": "npm install --legacy-peer-deps",
+    "netlify:build": "npm run netlify:install && npm run build"
   },
   "license": "MIT",
   "repository": {
